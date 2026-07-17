@@ -561,8 +561,10 @@
         </div>
 
         <div class="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-12 gap-12 lg:gap-16">
+
             
-            <!-- Sticky Card (Aviso Importante) -> Izquierda en Desktop, Arriba en Mobile -->
+            
+          <!-- Sticky Card (Aviso Importante) -> Izquierda en Desktop, Arriba en Mobile -->
             <div class="lg:col-span-5 order-1 lg:order-1 relative">
                 <div class="details-card-anim lg:sticky lg:top-32 bg-fall-coffee rounded-[2rem] p-8 md:p-10 shadow-[0_30px_60px_rgba(62,39,35,0.12)] border border-white/5 relative overflow-hidden">
                     
@@ -572,7 +574,7 @@
                     <h3 class="font-retro text-2xl md:text-3xl font-extrabold text-white mb-6 tracking-wide relative z-10">Un recordatorio<br>importante</h3>
                     
                     <p class="font-body text-base md:text-lg text-white/80 leading-relaxed relative z-10 mb-8">
-                        Conforme vayan acomodando los Bundles en las cajas, es <strong class="text-fall-mustard">VITAL</strong> llevar un registro exacto. Con esos datos se va a generar la orden oficial de envío a Amazon.
+                        Conforme vayan acomodando los Bundles en las cajas, es <strong class="text-fall-mustard">VITAL</strong> llevar un registro de las cajas, ya que Amazon no me permite generar la orden de envío si no tengo la información completa.
                     </p>
 
                     <div class="flex flex-col gap-4 relative z-10">
@@ -585,8 +587,26 @@
                             <span class="font-body text-sm font-medium text-white/90">El peso total y las medidas finales de la caja sellada.</span>
                         </div>
                     </div>
+
+                    <!-- NUEVA SECCIÓN: Solución / Plantilla Excel -->
+                    <div class="mt-8 pt-8 border-t border-white/10 relative z-10">
+                        <p class="font-body text-[15px] md:text-base text-white/75 leading-relaxed mb-5 italic">
+                            Les quise ahorrar trabajo y aquí hay una plantilla de excel para que descarguen y rellenen si se les hace más fácil:
+                        </p>
+                        
+                        <a href="https://docs.google.com/spreadsheets/d/1vA6C3qKrcN2StIZpHJ0WFi8nx_JSebY2/edit?usp=drive_link&ouid=100524341376188151207&rtpof=true&sd=true" target="_blank" class="group flex items-center justify-between sm:justify-start gap-3 bg-[#E8F5E9] hover:bg-white border border-transparent text-[#166534] px-5 py-3.5 rounded-xl font-body font-bold text-[15px] transition-all duration-300 shadow-[0_5px_15px_rgba(0,0,0,0.2)] hover:shadow-[0_10px_25px_rgba(22,101,52,0.2)] hover:-translate-y-1 w-full sm:w-fit">
+                            <div class="flex items-center gap-2.5">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                                Descargar Plantilla
+                            </div>
+                            <svg class="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:translate-y-0.5 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                        </a>
+                    </div>
+
                 </div>
             </div>
+
+            
 
             <!-- Text Content (Las reglas de las cajas) -> Derecha en Desktop, Abajo en Mobile -->
             <div class="lg:col-span-7 order-2 lg:order-2 flex flex-col gap-10 lg:pl-4">
