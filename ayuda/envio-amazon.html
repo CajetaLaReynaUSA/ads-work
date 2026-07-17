@@ -347,6 +347,15 @@
         </div>
     </section>
 
+
+
+
+
+
+
+
+
+    
     <!-- ==========================================
          PASO 1: DASHBOARD OPERATIVO Y RECURSOS
     =========================================== -->
@@ -357,9 +366,7 @@
 
         <div class="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-12 gap-12 lg:gap-16">
             
-
-            
-       <!-- [1. TEXTO PRINCIPAL] -> Arriba en Mobile, Izquierda en Desktop -->
+            <!-- [1. TEXTO PRINCIPAL] -> Arriba en Mobile, Izquierda en Desktop -->
             <div class="lg:col-span-7 order-1 flex flex-col gap-8 lg:gap-10 lg:pr-4 relative">
                 
                 <!-- Título Principal de la Sección -->
@@ -426,15 +433,13 @@
                     </p>
 
                 </div>
-            </div>
-            
-            
+            </div> <!-- ESTE DIV CERRADO ES EL QUE FALTABA -->
 
-            
-
-            
-
-           <!-- A. TARJETA DE DESCARGAS (CON ACORDEONES Y ENLACES REALES) -->
+            <!-- [2. TARJETAS DE DETALLES + RECURSOS] -> Abajo en Mobile, Derecha en Desktop -->
+            <div class="lg:col-span-5 relative mt-4 lg:mt-0 order-2">
+                <div class="flex flex-col gap-6 lg:gap-8 lg:sticky lg:top-32">
+                    
+                    <!-- A. TARJETA DE DESCARGAS (CON ACORDEONES Y ENLACES REALES) -->
                     <div class="details-card-anim bg-fall-leather rounded-[2rem] p-8 md:p-10 shadow-[0_30px_60px_rgba(62,39,35,0.12)] border border-white/10">
                         <h3 class="font-retro text-2xl md:text-3xl font-extrabold text-white mb-8 tracking-wide">Descargar<br>las etiquetas</h3>
                         
@@ -526,11 +531,16 @@
                             
                         </div>
                     </div>
+                </div>
+            </div>
 
         </div>
     </section>
 
 
+
+
+    
 
 
 
@@ -610,6 +620,11 @@
             </div>
         </div>
     </section>
+
+
+
+
+    
 
     <!-- ==========================================
          PASO 3: ZIG-ZAG (TARJETA A LA DERECHA)
