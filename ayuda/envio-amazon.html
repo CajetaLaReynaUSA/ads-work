@@ -202,7 +202,11 @@
                 <p class="font-body text-xl md:text-2xl text-fall-coffee/85 leading-[1.6] mb-6 md:mb-8">
                     <span class="font-semibold text-fall-rust">Hola, soy Juan Pablo.</span> Hice este manual para evitar errores porque nos hemos dado cuenta que Amazon es 
                     <span class="font-bold text-fall-rust relative inline-block">extremadamente estricto<svg class="absolute -bottom-2 left-0 w-full h-2 text-fall-rust/30" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="3" fill="transparent"/></svg></span>.
-                    debido a que Amazon casi no usa personal para recibir inventario. Está automatizado su proceso.
+                </p>
+
+                 <p class="font-body text-xl md:text-2xl text-fall-coffee/85 leading-[1.6] mb-6 md:mb-8">
+                    El proceso <span class="font-semibold text-fall-rust">no es particularmente complicado</span> pero debido a que Amazon está <span class="font-semibold text-fall-rust">automatizando todos sus procesos</span>
+                    debemos de ser muy cuidadosos con cada paso porque un error puede hacer que no acepten la mercancía o que nos cobren multas.
                 </p>
             </div>
 
@@ -243,29 +247,103 @@
                 </div>
             </div>
 
-            <!-- Roadmap -->
-            <div class="prologue-block max-w-4xl mx-auto">
-                <div class="text-center mb-12">
-                    <h3 class="font-retro text-3xl md:text-4xl font-extrabold text-fall-coffee mb-4">El Mapa de Trabajo</h3>
+            
+
+            <!-- ==========================================
+                 ROADMAP: FASES Y SUB-PASOS (Timeline UI)
+            =========================================== -->
+            <div class="prologue-block max-w-4xl mx-auto mt-12 md:mt-16">
+                <div class="text-center mb-16">
+                    <h3 class="font-retro text-3xl md:text-4xl lg:text-5xl font-extrabold text-fall-coffee mb-4 tracking-tight">
+                        El flujo operativo FBA
+                    </h3>
+                    <p class="font-body text-lg md:text-xl text-fall-coffee/70 max-w-2xl mx-auto">
+                        El proceso se divide en 3 fases principales y 5 pasos clave para garantizar la aceptación en los almacenes.
+                    </p>
                 </div>
-                <div class="relative pl-6 md:pl-10 border-l-2 border-fall-coffee/10 space-y-12">
-                    <div class="relative">
-                        <div class="absolute -left-[35px] md:-left-[51px] w-8 h-8 md:w-10 md:h-10 bg-fall-cream border-2 border-fall-rust text-fall-rust rounded-full flex items-center justify-center font-retro font-bold text-sm md:text-base">1</div>
-                        <h4 class="font-retro text-xl md:text-2xl font-bold text-fall-coffee mb-2">Armado y empaquetado</h4>
-                        <p class="font-body text-base md:text-lg text-fall-coffee/75 leading-relaxed">Ensamblar Bundles, etiquetar y registrar caja por caja detalladamente.</p>
+
+                <!-- Contenedor del Timeline -->
+                <div class="relative">
+                    <!-- Línea vertical conectora -->
+                    <div class="absolute top-8 bottom-12 left-[27px] md:left-[39px] w-[2px] bg-fall-coffee/10 rounded-full"></div>
+
+                    <!-- FASE 1 -->
+                    <div class="relative pl-20 md:pl-28 mb-12 md:mb-16 group prologue-block">
+                        <!-- Nodo Circular -->
+                        <div class="absolute left-0 top-6 w-14 h-14 md:w-20 md:h-20 bg-fall-rust text-white rounded-full flex items-center justify-center font-retro text-2xl md:text-3xl font-extrabold border-[6px] border-fall-cream shadow-sm z-10 transition-transform duration-500 group-hover:scale-110 group-hover:shadow-md">
+                            1
+                        </div>
+                        
+                        <!-- Tarjeta de Contenido -->
+                        <div class="bg-white/70 backdrop-blur-xl border border-white rounded-[2rem] p-6 md:p-8 shadow-[0_15px_35px_rgba(62,39,35,0.03)] transition-all duration-500 group-hover:shadow-[0_25px_50px_rgba(62,39,35,0.06)] group-hover:-translate-y-1">
+                            <h4 class="font-retro text-2xl md:text-3xl font-bold text-fall-coffee mb-6 tracking-tight">Prepara la mercancía</h4>
+                            
+                            <div class="flex flex-col gap-5">
+                                <div class="flex items-start gap-4">
+                                    <span class="mt-0.5 flex-shrink-0 text-fall-rust font-bold font-retro text-xs md:text-sm bg-fall-rust/10 border border-fall-rust/20 px-2.5 py-1 rounded-lg">1.1</span>
+                                    <p class="font-body text-base md:text-lg text-fall-coffee/80 leading-relaxed">
+                                        Armar los Bundles de 3 botellas con papel termoencogible y pegarle las etiquetas correspondientes.
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <span class="mt-0.5 flex-shrink-0 text-fall-rust font-bold font-retro text-xs md:text-sm bg-fall-rust/10 border border-fall-rust/20 px-2.5 py-1 rounded-lg">1.2</span>
+                                    <p class="font-body text-base md:text-lg text-fall-coffee/80 leading-relaxed">
+                                        Acomodarlos en cajas con un registro detallado de las especificaciones de cada caja.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="relative">
-                        <div class="absolute -left-[35px] md:-left-[51px] w-8 h-8 md:w-10 md:h-10 bg-fall-cream border-2 border-fall-mustard text-fall-mustard rounded-full flex items-center justify-center font-retro font-bold text-sm md:text-base">2</div>
-                        <h4 class="font-retro text-xl md:text-2xl font-bold text-fall-coffee mb-2">Aviso y orden de envío</h4>
-                        <p class="font-body text-base md:text-lg text-fall-coffee/75 leading-relaxed">Declarar envío en Seller Central con los datos precisos.</p>
+
+                    <!-- FASE 2 -->
+                    <div class="relative pl-20 md:pl-28 mb-12 md:mb-16 group prologue-block">
+                        <div class="absolute left-0 top-6 w-14 h-14 md:w-20 md:h-20 bg-fall-mustard text-white rounded-full flex items-center justify-center font-retro text-2xl md:text-3xl font-extrabold border-[6px] border-fall-cream shadow-sm z-10 transition-transform duration-500 group-hover:scale-110 group-hover:shadow-md">
+                            2
+                        </div>
+                        
+                        <div class="bg-white/70 backdrop-blur-xl border border-white rounded-[2rem] p-6 md:p-8 shadow-[0_15px_35px_rgba(62,39,35,0.03)] transition-all duration-500 group-hover:shadow-[0_25px_50px_rgba(62,39,35,0.06)] group-hover:-translate-y-1">
+                            <h4 class="font-retro text-2xl md:text-3xl font-bold text-fall-coffee mb-6 tracking-tight">Generar el envío</h4>
+                            
+                            <div class="flex flex-col gap-5">
+                                <div class="flex items-start gap-4">
+                                    <span class="mt-0.5 flex-shrink-0 text-fall-mustard font-bold font-retro text-xs md:text-sm bg-fall-mustard/10 border border-fall-mustard/20 px-2.5 py-1 rounded-lg">2.1</span>
+                                    <p class="font-body text-base md:text-lg text-fall-coffee/80 leading-relaxed">
+                                        Avisarme cuántas cajas salieron y sus medidas/pesos exactos para que genere la orden en Seller Central.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="relative">
-                        <div class="absolute -left-[35px] md:-left-[51px] w-8 h-8 md:w-10 md:h-10 bg-fall-cream border-2 border-fall-olive text-fall-olive rounded-full flex items-center justify-center font-retro font-bold text-sm md:text-base">3</div>
-                        <h4 class="font-retro text-xl md:text-2xl font-bold text-fall-coffee mb-2">Etiquetado y salida</h4>
-                        <p class="font-body text-base md:text-lg text-fall-coffee/75 leading-relaxed">Imprimir PDF final, sellar y entregar a paquetería.</p>
+
+                    <!-- FASE 3 -->
+                    <div class="relative pl-20 md:pl-28 mb-4 group prologue-block">
+                        <div class="absolute left-0 top-6 w-14 h-14 md:w-20 md:h-20 bg-fall-olive text-white rounded-full flex items-center justify-center font-retro text-2xl md:text-3xl font-extrabold border-[6px] border-fall-cream shadow-sm z-10 transition-transform duration-500 group-hover:scale-110 group-hover:shadow-md">
+                            3
+                        </div>
+                        
+                        <div class="bg-white/70 backdrop-blur-xl border border-white rounded-[2rem] p-6 md:p-8 shadow-[0_15px_35px_rgba(62,39,35,0.03)] transition-all duration-500 group-hover:shadow-[0_25px_50px_rgba(62,39,35,0.06)] group-hover:-translate-y-1">
+                            <h4 class="font-retro text-2xl md:text-3xl font-bold text-fall-coffee mb-6 tracking-tight">Despacho</h4>
+                            
+                            <div class="flex flex-col gap-5">
+                                <div class="flex items-start gap-4">
+                                    <span class="mt-0.5 flex-shrink-0 text-fall-olive font-bold font-retro text-xs md:text-sm bg-fall-olive/10 border border-fall-olive/20 px-2.5 py-1 rounded-lg">3.1</span>
+                                    <p class="font-body text-base md:text-lg text-fall-coffee/80 leading-relaxed">
+                                        Imprimir y pegar en las cajas correspondientes las etiquetas de envío FBA que les mande.
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <span class="mt-0.5 flex-shrink-0 text-fall-olive font-bold font-retro text-xs md:text-sm bg-fall-olive/10 border border-fall-olive/20 px-2.5 py-1 rounded-lg">3.2</span>
+                                    <p class="font-body text-base md:text-lg text-fall-coffee/80 leading-relaxed">
+                                        Esperar a que la paquetería asociada pase a recoger las cajas listas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            
         </div>
     </section>
 
