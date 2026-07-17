@@ -410,7 +410,7 @@
                                         </div>
                                     </div>
                                     <div class="flex flex-col">
-                                        <span class="font-retro text-sm font-bold text-fall-coffee">Aquí un ejemplo</span>
+                                        <span class="font-retro text-sm font-bold text-fall-coffee">Haz click aquí para ver un ejemplo</span>
                                     </div>
                                 </button>
                             </div>
@@ -594,7 +594,7 @@
                     <h2 class="font-retro text-4xl md:text-5xl lg:text-6xl font-extrabold text-fall-coffee mb-4 tracking-tight leading-[1.05]">Empaquetado</h2>
                     <h3 class="font-body text-xl md:text-2xl font-medium text-fall-mustard mb-6">2.1 Especificaciones de empaque</h3>
                     <p class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed mb-10">
-                        Una vez que los Bundles ya están sellados y etiquetados, se pueden enviar en cualquier caja siempre que sea de cartón liso. Sin embargo, para que las bodegas de Amazon las acepten, hay <strong class="text-fall-coffee">4 reglas inquebrantables</strong>:
+                        Una vez que los Bundles están etiquetados, se pueden enviar en cualquier caja siempre que sea de cartón liso. Sin embargo, para que las bodegas de Amazon las acepten, hay <strong class="text-fall-coffee">4 reglas</strong>:
                     </p>
                     
                     <ul class="flex flex-col gap-10 mb-12">
@@ -602,8 +602,8 @@
                         <li class="group flex items-start gap-5 transition-all duration-300">
                             <span class="mt-1.5 text-fall-mustard flex-shrink-0 bg-fall-mustard/10 p-2 rounded-full"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg></span>
                             <span class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed">
-                                <strong class="text-fall-coffee font-semibold block mb-1">Cero códigos ajenos:</strong> 
-                                Las cajas no deben de tener ningún logotipo ni código de barras ajeno. En caso de que los tengan, se deben tapar por completo con plumón permanente grueso o con etiquetas en blanco.
+                                <strong class="text-fall-coffee font-semibold block mb-1">Sin códigos ajenos:</strong> 
+                                Las cajas no deben de tener ningún logotipo ni código de barras excepto el de la órden de envío. En caso de que los tengan, se pueden tapar con plumón permanente grueso o con etiquetas en blanco.
                             </span>
                         </li>
 
@@ -621,29 +621,43 @@
                             <span class="mt-1.5 text-fall-mustard flex-shrink-0 bg-fall-mustard/10 p-2 rounded-full"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg></span>
                             <span class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed">
                                 <strong class="text-fall-coffee font-semibold block mb-1">Límite de Peso (50 Lbs):</strong> 
-                                Ninguna caja debe pesar más de <strong class="text-fall-coffee">22.6 kg (50 libras)</strong>. Esto equivale a un máximo de 20 bundles grandes (de 360 gr) o 46 bundles chicos (de 155 gr) por caja.
+                                Ninguna caja debe pesar más de <strong class="text-fall-coffee">22.6 kg (50 Lbs)</strong>. Esto equivale a un máximo de 20 bundles grandes (de 360 gr) o 46 bundles chicos (de 155 gr) por caja.
                             </span>
                         </li>
 
-                        <!-- Regla 4 -->
+                        <!-- Regla 4 (Con botón Lightbox) -->
                         <li class="group flex items-start gap-5 transition-all duration-300">
                             <span class="mt-1.5 text-fall-mustard flex-shrink-0 bg-fall-mustard/10 p-2 rounded-full"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg></span>
-                            <span class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed">
-                                <strong class="text-fall-coffee font-semibold block mb-1">Sellado en forma de "H":</strong> 
-                                La caja se debe cerrar usando cinta de embalaje normal (mínimo de 2 pulgadas de ancho). Hay que poner cinta en la línea central de apertura y también en los 4 bordes laterales, formando una "H" tanto arriba como abajo.
-                            </span>
+                            <div class="flex flex-col gap-4">
+                                <span class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed">
+                                    <strong class="text-fall-coffee font-semibold block mb-1">Sellado en forma de "H":</strong> 
+                                    La caja se debe cerrar con cinta en la línea central de apertura y también en los 4 bordes laterales, formando una "H" tanto arriba como abajo.
+                                </span>
+                                <button onclick="openLightbox('https://res.cloudinary.com/dlylomauh/image/upload/v1784319203/images_4_vykvqc.jpg')" class="flex items-center gap-4 p-2.5 pr-5 bg-white/60 hover:bg-white border border-white/80 hover:border-fall-rust/30 rounded-2xl w-fit shadow-sm hover:shadow-md transition-all duration-300 group/btn text-left">
+                                    <div class="relative overflow-hidden rounded-xl w-14 h-14 flex-shrink-0 border border-fall-coffee/10">
+                                        <img src="https://res.cloudinary.com/dlylomauh/image/upload/v1784319203/images_4_vykvqc.jpg" alt="Ejemplo de sellado en H" class="w-full h-full object-cover transform group-hover/btn:scale-110 transition-transform duration-500">
+                                        <div class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover/btn:opacity-100 transition-opacity">
+                                            <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-retro text-sm font-bold text-fall-coffee">Haz click aquí para ver un ejemplo</span>
+                                    </div>
+                                </button>
+                            </div>
                         </li>
+                        
                     </ul>
 
                     <!-- Call to Action Final -->
                     <div class="bg-white/60 backdrop-blur-md border border-white shadow-[0_10px_30px_rgba(62,39,35,0.03)] rounded-[1.5rem] p-6 md:p-8">
                         <div class="flex flex-col gap-4">
-                            <h3 class="font-body text-xl md:text-2xl font-medium text-fall-mustard mb-6">2.1 Especificaciones de empaque</h3>
+                            <h3 class="font-body text-xl md:text-2xl font-medium text-fall-mustard">2.2 Aviso de que están listas las cajas</h3>
                             <p class="font-body text-lg text-fall-coffee/80 leading-relaxed">
                                 Una vez selladas las cajas, mándame la lista completa con tamaño, peso y productos de cada una para que yo pueda emitir las etiquetas de envío.
                             </p>
                             <a href="https://wa.me/5219818296400" target="_blank" class="inline-flex items-center gap-3 bg-fall-coffee hover:bg-fall-mustard text-white px-6 py-3.5 rounded-xl font-body font-medium text-[15px] transition-colors w-fit group">
-                                Enviar reporte por WhatsApp
+                                Click aquí para abrir mi Whatsapp
                                 <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                             </a>
                         </div>
