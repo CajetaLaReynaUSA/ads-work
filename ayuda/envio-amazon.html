@@ -359,92 +359,106 @@
             
 
             
-            <!-- [1. TEXTO PRINCIPAL] -> Arriba en Mobile, Izquierda en Desktop -->
-            <div class="lg:col-span-7 order-1 flex flex-col gap-10 lg:pr-4">
+       <!-- [1. TEXTO PRINCIPAL] -> Arriba en Mobile, Izquierda en Desktop -->
+            <div class="lg:col-span-7 order-1 flex flex-col gap-8 lg:gap-10 lg:pr-4 relative">
                 
-                <!-- Título Principal de la Sección (Separado y Jerárquico) -->
-                <div class="reveal-block">
+                <!-- Título Principal de la Sección -->
+                <div class="reveal-block mb-2 md:mb-4">
                     <h2 class="font-retro text-4xl md:text-5xl lg:text-6xl font-extrabold text-fall-coffee mb-4 tracking-tight leading-[1.05]">¿Cómo preparar la mercancía?</h2>
                     <p class="font-body text-lg md:text-xl text-fall-coffee/70 leading-relaxed max-w-2xl">
                         Este es el proceso físico en el almacén. Cada detalle cuenta para asegurar una recepción sin contratiempos.
                     </p>
                 </div>
 
-                <!-- Sub-Paso 1.1 (Envuelto en una tarjeta sutil para agrupar las reglas) -->
-                <div class="reveal-block bg-white/40 backdrop-blur-md border border-white/60 rounded-[2rem] p-6 md:p-8 shadow-sm">
+                <!-- SUB-SECCIÓN 1.1: EL ARMADO FÍSICO -->
+                <div class="reveal-block bg-white/40 backdrop-blur-md border border-white/60 rounded-[2rem] p-6 md:p-8 shadow-sm transition-all hover:shadow-md hover:bg-white/50 duration-500">
                     <div class="flex items-center gap-3 mb-6">
-                        <span class="font-retro font-bold text-sm bg-fall-rust/10 text-fall-rust px-3 py-1 rounded-lg">1.1</span>
-                        <h3 class="font-body text-2xl font-bold text-fall-coffee">Armado de los Bundles</h3>
+                        <span class="font-retro font-bold text-sm md:text-base bg-fall-rust/10 text-fall-rust border border-fall-rust/20 px-3 py-1 rounded-lg">1.1</span>
+                        <h3 class="font-body text-2xl md:text-3xl font-bold text-fall-coffee tracking-tight">Armado de los Bundles</h3>
                     </div>
                     
-                    <p class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed mb-10">
-                        Para que Amazon nos acepte los Bundles hay <strong class="text-fall-coffee">3 condiciones estrictas</strong> que se deben de cumplir:
+                    <p class="font-body text-base md:text-lg text-fall-coffee/75 leading-relaxed mb-8">
+                        El primer paso es el ensamblaje físico con papel termoencogible. Hay <strong class="text-fall-coffee">2 condiciones críticas</strong> en esta etapa:
                     </p>
                     
-                    <ul class="flex flex-col gap-10">
+                    <ul class="flex flex-col gap-8">
                         <!-- Regla 1 + Imagen Lightbox -->
-                        <li class="group flex items-start gap-5 transition-all duration-300">
-                            <span class="mt-1.5 text-fall-rust flex-shrink-0 bg-fall-rust/10 p-2 rounded-full">
+                        <li class="group flex items-start gap-4 transition-all duration-300">
+                            <span class="mt-1 flex-shrink-0 bg-fall-rust/10 text-fall-rust p-2 rounded-full">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
                             </span>
                             <div class="flex flex-col gap-4">
-                                <span class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed">
+                                <span class="font-body text-lg text-fall-coffee/80 leading-relaxed">
                                     <strong class="text-fall-coffee font-semibold block mb-1">Sin códigos ajenos a la vista:</strong> 
-                                    Es importante que al momento de hacer los Bundles los frascos se ordenen de manera que los códigos de barras propios de las botellas queden viendo “Hacia el interior”. Que queden ocultos para evitar que los escáneres de Amazon pudieran leerlos por accidente.
+                                    Los frascos deben ordenarse de manera que sus códigos de barras individuales queden viendo “Hacia el interior” (ocultos). Esto evita que los escáneres de Amazon los lean por accidente.
                                 </span>
-                                <button onclick="openLightbox('https://res.cloudinary.com/dlylomauh/image/upload/v1782783591/Reporte_de_Amazon_Hasta_el_20_de_abril_del_2026_3_br6ve5.webp')" class="flex items-center gap-4 p-3 pr-6 bg-white/50 hover:bg-white border border-white/60 hover:border-fall-rust/30 rounded-2xl w-fit shadow-sm hover:shadow-md transition-all duration-300 group/btn text-left">
-                                    <div class="relative overflow-hidden rounded-xl w-16 h-16 flex-shrink-0 border border-fall-coffee/10">
+                                <button onclick="openLightbox('https://res.cloudinary.com/dlylomauh/image/upload/v1782783591/Reporte_de_Amazon_Hasta_el_20_de_abril_del_2026_3_br6ve5.webp')" class="flex items-center gap-4 p-2.5 pr-5 bg-white/60 hover:bg-white border border-white/80 hover:border-fall-rust/30 rounded-2xl w-fit shadow-sm hover:shadow-md transition-all duration-300 group/btn text-left">
+                                    <div class="relative overflow-hidden rounded-xl w-14 h-14 flex-shrink-0 border border-fall-coffee/10">
                                         <img src="https://res.cloudinary.com/dlylomauh/image/upload/v1782783591/Reporte_de_Amazon_Hasta_el_20_de_abril_del_2026_3_br6ve5.webp" alt="Ejemplo de acomodo" class="w-full h-full object-cover transform group-hover/btn:scale-110 transition-transform duration-500">
                                         <div class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover/btn:opacity-100 transition-opacity">
-                                            <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                                            <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
                                         </div>
                                     </div>
                                     <div class="flex flex-col">
                                         <span class="font-retro text-sm font-bold text-fall-coffee">Ver ejemplo visual</span>
-                                        <span class="font-body text-xs text-fall-coffee/60">Haz clic para ampliar imagen</span>
                                     </div>
                                 </button>
                             </div>
                         </li>
 
                         <!-- Regla 2 -->
-                        <li class="group flex items-start gap-5 transition-all duration-300">
-                            <span class="mt-1.5 text-fall-mustard flex-shrink-0 bg-fall-mustard/10 p-2 rounded-full"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg></span>
-                            <span class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed">
+                        <li class="group flex items-start gap-4 transition-all duration-300">
+                            <span class="mt-1 flex-shrink-0 bg-fall-mustard/10 text-fall-mustard p-2 rounded-full"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg></span>
+                            <span class="font-body text-lg text-fall-coffee/80 leading-relaxed">
                                 <strong class="text-fall-coffee font-semibold block mb-1">Prueba de caída (1 metro):</strong> 
-                                Los Bundles sellados deben aguantar una caída de 1 metro de altura sin separarse. Cuando se sellen con el plástico termoencogible debe quedar firme sin movimiento.
+                                Los Bundles sellados deben aguantar una caída de 1 metro de altura sin separarse. El plástico termoencogible debe dejarlos firmes y sin movimiento interno.
                             </span>
                         </li>
+                    </ul>
+                </div>
 
+                <!-- SUB-SECCIÓN 1.2: EL ETIQUETADO -->
+                <div class="reveal-block bg-white/40 backdrop-blur-md border border-white/60 rounded-[2rem] p-6 md:p-8 shadow-sm transition-all hover:shadow-md hover:bg-white/50 duration-500">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="font-retro font-bold text-sm md:text-base bg-fall-olive/10 text-fall-olive border border-fall-olive/20 px-3 py-1 rounded-lg">1.2</span>
+                        <h3 class="font-body text-2xl md:text-3xl font-bold text-fall-coffee tracking-tight">Etiquetado de los Bundles</h3>
+                    </div>
+                    
+                    <p class="font-body text-base md:text-lg text-fall-coffee/75 leading-relaxed mb-8">
+                        Una vez que el paquete es sólido, se considera un "producto nuevo" y requiere sus propias identificaciones. Hay <strong class="text-fall-coffee">3 reglas de etiquetado</strong>:
+                    </p>
+
+                    <ul class="flex flex-col gap-8">
                         <!-- Regla 3 -->
-                        <li class="group flex items-start gap-5 transition-all duration-300">
-                            <span class="mt-1.5 text-fall-olive flex-shrink-0 bg-fall-olive/10 p-2 rounded-full"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg></span>
-                            <span class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed">
-                                <strong class="text-fall-coffee font-semibold block mb-1">Etiquetado correcto:</strong> 
-                                Amazon pide que cada Bundle tenga 2 etiquetas visibles en la parte lateral del producto o en la parte plana más amplia del mismo.
+                        <li class="group flex items-start gap-4 transition-all duration-300">
+                            <span class="mt-1 flex-shrink-0 bg-fall-olive/10 text-fall-olive p-2 rounded-full"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg></span>
+                            <span class="font-body text-lg text-fall-coffee/80 leading-relaxed">
+                                <strong class="text-fall-coffee font-semibold block mb-1">Acomodo correcto (2 caras):</strong> 
+                                Amazon exige que cada Bundle tenga 2 etiquetas FNSKU visibles, pegadas en la parte lateral o en la superficie plana más amplia del plástico.
                             </span>
                         </li>
 
                         <!-- Regla 4 -->
-                        <li class="group flex items-start gap-5 transition-all duration-300">
-                            <span class="mt-1.5 text-fall-leather flex-shrink-0 bg-fall-leather/10 p-2 rounded-full"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg></span>
-                            <span class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed">
-                                <strong class="text-fall-coffee font-semibold block mb-1">Código de barras por producto:</strong> 
-                                Cada Bundle es considerado un producto. Como tenemos 4 combinaciones de sabores con 2 tamaños diferentes. Solo hay que revisar que el Bundle corresponda al tamaño.
+                        <li class="group flex items-start gap-4 transition-all duration-300">
+                            <span class="mt-1 flex-shrink-0 bg-fall-leather/10 text-fall-leather p-2 rounded-full"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg></span>
+                            <span class="font-body text-lg text-fall-coffee/80 leading-relaxed">
+                                <strong class="text-fall-coffee font-semibold block mb-1">Validación de SKU y Tamaño:</strong> 
+                                Como tenemos 4 combinaciones de sabores con 2 tamaños diferentes, es vital revisar que la etiqueta de barras corresponda exactamente al sabor y peso del Bundle armado.
                             </span>
                         </li>
 
-                        <!-- Regla Sold as a Set -->
-                        <li class="group flex items-start gap-5 transition-all duration-300 bg-white/60 p-6 rounded-[1.5rem] border border-white shadow-sm mt-4">
-                            <span class="mt-1.5 text-fall-rust flex-shrink-0 bg-fall-rust/10 p-2 rounded-full"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg></span>
-                            <span class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed">
+                        <!-- Regla Sold as a Set (Integrada elegante) -->
+                        <li class="group flex items-start gap-4 transition-all duration-300 bg-white/60 p-5 md:p-6 rounded-[1.5rem] border border-white shadow-sm mt-2">
+                            <span class="mt-1 flex-shrink-0 bg-fall-rust/10 text-fall-rust p-2 rounded-full"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg></span>
+                            <span class="font-body text-lg text-fall-coffee/80 leading-relaxed">
                                 <strong class="text-fall-coffee font-semibold block mb-1">Etiqueta de “Sold as a Set”:</strong> 
-                                Cada Bundle debe de llevar una etiqueta de “Sold as a set” para evitar que un empleado de Amazon en el futuro pudiera abrir los productos por error.
+                                Además del código de barras, cada paquete debe llevar esta etiqueta de seguridad. Evita que un empleado de Amazon en el futuro rompa el plástico por error pensando que son unidades sueltas.
                             </span>
                         </li>
                     </ul>
                 </div>
             </div>
+            
             
 
             
