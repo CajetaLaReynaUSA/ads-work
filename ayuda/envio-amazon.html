@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cajeta La Reyna | Envío a Amazon (FBA)</title>
+    <title>Cajeta La Reyna | Manual Logístico FBA</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -101,7 +101,7 @@
     <nav id="desktop-navbar" class="hidden md:flex fixed top-8 left-1/2 -translate-x-1/2 z-50 bg-premium-black backdrop-blur-xl border border-premium-border rounded-full px-2.5 py-2.5 shadow-[0_25px_50px_rgba(0,0,0,0.15)] items-center gap-2">
         <div class="relative group dropdown-container">
             <button class="dropdown-toggle text-white/85 hover:text-white px-6 py-3 rounded-full text-[15px] font-medium transition-colors flex items-center gap-2.5">
-                <span class="nav-link-text pb-0.5">Pasos FBA</span>
+                <span class="nav-link-text pb-0.5">Fases FBA</span>
                 <svg class="w-4 h-4 chevron text-white/50 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" /></svg>
             </button>
             <div class="dropdown-menu absolute top-[125%] left-1/2 -translate-x-1/2 w-56 bg-premium-dark border border-premium-border rounded-3xl shadow-2xl overflow-hidden backdrop-blur-2xl">
@@ -121,10 +121,14 @@
 
         <div class="w-[1.5px] h-5 bg-white/10 mx-1"></div>
 
+        <a href="#paso-1" class="scroll-link text-white/85 hover:text-white px-6 py-3 rounded-full text-[15px] font-medium transition-colors flex items-center">
+            <span class="nav-link-text pb-0.5">Etiquetas FNSKU</span>
+        </a>
+
         <div class="w-[1.5px] h-5 bg-white/10 mx-1"></div>
 
         <a href="#acerca-de" class="scroll-link text-white/85 hover:text-white px-6 py-3 rounded-full text-[15px] font-medium transition-colors flex items-center">
-            <span class="nav-link-text pb-0.5">Contacto</span>
+            <span class="nav-link-text pb-0.5">Soporte</span>
         </a>
     </nav>
 
@@ -143,7 +147,7 @@
         <div class="flex flex-col gap-2.5">
             <div class="mobile-accordion bg-white/5 rounded-2xl overflow-hidden border border-white/5">
                 <button class="w-full flex justify-between items-center text-white px-6 py-4.5 font-medium text-lg accordion-trigger active:bg-white/5 transition-colors">
-                    Pasos FBA
+                    Fases FBA
                     <svg class="w-5 h-5 text-white/50 chevron-mob transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" /></svg>
                 </button>
                 <div class="h-0 overflow-hidden opacity-0 mobile-submenu bg-black/20">
@@ -199,26 +203,53 @@
                 
                 <h2 class="font-retro text-4xl md:text-5xl lg:text-6xl font-extrabold text-fall-coffee mb-8 tracking-tight">¿Por qué este Manual?</h2>
                 
-                <p class="font-body text-xl md:text-2xl text-fall-coffee/85 leading-[1.6] mb-6">
+                <p class="font-body text-xl md:text-2xl text-fall-coffee/85 leading-[1.6] mb-6 md:mb-8">
                     <span class="font-semibold text-fall-rust">Hola, soy Juan Pablo.</span> Hice este manual para evitar errores porque nos hemos dado cuenta que Amazon es 
                     <span class="font-bold text-fall-rust relative inline-block">extremadamente estricto<svg class="absolute -bottom-2 left-0 w-full h-2 text-fall-rust/30" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="3" fill="transparent"/></svg></span>.
                 </p>
 
-                 <p class="font-body text-xl md:text-2xl text-fall-coffee/85 leading-[1.6] mb-6">
+                <p class="font-body text-xl md:text-2xl text-fall-coffee/85 leading-[1.6] mb-6 md:mb-8">
                     El proceso no es complicado, pero sí necesitamos que se haga correctamente para que Amazon no de problemas.
-                 </p>
-
-
-                <p class="font-body text-lg md:text-xl text-fall-coffee/70 leading-relaxed mb-6 md:mb-8">
-                Hoy, casi el 100% de la recepción de mercancía en sus bodegas está automatizada mediante escáneres y básculas, porque Amazon quiere ocupar la menor cantidad de gente posible.
                 </p>
 
-                </div>
+                <p class="font-body text-lg md:text-xl text-fall-coffee/70 leading-relaxed mb-6 md:mb-8">
+                    Esto debido a que Amazon está automatizando todo para que sus procesos logísticos involucren a la menor cantidad de personas posible.
+                </p>
 
-        
+                <p class="font-body text-lg md:text-xl text-fall-coffee/70 leading-relaxed mb-6 md:mb-8">
+                    Hoy, casi el 100% de la recepción de mercancía en sus bodegas está automatizada mediante escáneres y básculas.
+                </p>
+
+                <p class="font-body text-lg md:text-xl text-fall-coffee/70 leading-relaxed">
+                    A menos que algo salga mal, rara vez interviene una persona y, por lo general, si esto sucede, nos cobran una multa.
+                </p>
+            </div>
+
+            <!-- UNIFIED Alerta Técnica (¡El texto se escribe UNA sola vez!) -->
+            <div class="prologue-block max-w-4xl mx-auto mb-20">
+                <div class="relative bg-fall-rust/[0.04] md:bg-white/70 md:backdrop-blur-xl border border-fall-rust/10 md:border-white/80 rounded-2xl md:rounded-[2rem] p-5 md:p-8 md:shadow-[0_25px_60px_rgba(62,39,35,0.03)] flex flex-col md:flex-row gap-2 md:gap-6 group md:hover:border-fall-rust/20 md:hover:bg-white transition-all duration-500 ease-premium overflow-hidden">
+                    
+                    <!-- Etiqueta Mobile (Oculta en Desktop) -->
+                    <div class="md:hidden absolute top-3 right-4 font-retro text-[10px] font-black uppercase tracking-widest text-fall-rust/40">Estatus</div>
+                    
+                    <!-- Cabecera Desktop (Oculta en Mobile) -->
+                    <div class="hidden md:flex items-center gap-3 shrink-0">
+                        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-fall-rust/10 text-fall-rust border border-fall-rust/10 font-retro font-bold text-xs">i</span>
+                        <h4 class="font-retro text-base font-bold text-fall-coffee uppercase tracking-widest">Nota Técnica</h4>
+                    </div>
+
+                    <!-- Texto Único de Mantenimiento (DRY Principle) -->
+                    <p class="font-body text-[15px] md:text-lg text-fall-coffee/90 leading-relaxed pr-8 md:pr-0 md:border-l-2 md:border-fall-mustard md:pl-4 md:italic">
+                        "Tuve un retraso <span class="text-fall-rust font-bold md:not-italic">enorme</span> debido a que para Amazon, empaquetar las botellas cuenta como <span class="text-fall-rust font-semibold">"Producto Nuevo"</span>. Pero ya están autorizados"
+                    </p>
+                </div>
+            </div>
+
             <!-- Las 3 Exigencias -->
             <div class="prologue-block mb-12">
-                <h3 class="font-body text-lg md:text-xl font-medium text-fall-coffee text-center mb-8">Eso significa que, al momento de generar una orden de envío, Amazon me exige declarar exactamente:</h3>
+                <h3 class="font-body text-2xl md:text-3xl font-medium text-fall-coffee text-center mb-8 tracking-tight leading-snug max-w-3xl mx-auto">
+                    Eso significa que, al momento de generar una orden de envío, Amazon me exige declarar exactamente:
+                </h3>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div class="bg-white/60 backdrop-blur-xl border border-white rounded-[2rem] p-8 shadow-[0_10px_30px_rgba(62,39,35,0.02)] text-center transition-transform hover:-translate-y-1 duration-500">
                         <div class="w-12 h-12 mx-auto bg-fall-rust/10 text-fall-rust rounded-full flex items-center justify-center mb-4"><svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg></div>
@@ -244,12 +275,11 @@
                     </div>
                     <div>
                         <p class="font-body text-base md:text-lg text-fall-coffee/80 leading-relaxed">
-                            Si hay discrepancias</strong> el sistema puede retener los productos, cobrar multas por procesamiento manual y, en el peor de los casos, bloquear nuestra cuenta para envíos futuros.
+                            <strong class="text-fall-rust">Si hay discrepancias</strong> el sistema puede retener los productos, cobrar multas por procesamiento manual y, en el peor de los casos, bloquear nuestra cuenta para envíos futuros.
                         </p>
                     </div>
                 </div>
             </div>
-
 
             <!-- Roadmap -->
             <div class="prologue-block max-w-4xl mx-auto">
@@ -297,7 +327,6 @@
                     </p>
                     
                     <ul class="flex flex-col gap-10">
-                        <!-- Regla 1 + Imagen Lightbox -->
                         <li class="group flex items-start gap-5 transition-all duration-300">
                             <span class="mt-1.5 text-fall-rust flex-shrink-0 bg-fall-rust/10 p-2 rounded-full">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
@@ -698,7 +727,7 @@
             initSmartNavbar();
             initPrologueAnimation();
             initEditorialAnimation();
-            initSpecsAccordion(); // NUEVO: Acordeones Mutex (Exclusivos)
+            initSpecsAccordion(); 
             initResourcesAccordion();
             initSmoothScrolling();
             initMobileMenu();
@@ -761,7 +790,7 @@
             });
         }
 
-        // 4. EDITORIAL BLOCKS ANIMATION (ZIG-ZAG + DETAILS CARDS)
+        // 4. EDITORIAL BLOCKS ANIMATION
         function initEditorialAnimation() {
             const blocks = gsap.utils.toArray('.reveal-block');
             blocks.forEach((block) => {
@@ -819,7 +848,6 @@
         function initResourcesAccordion() {
             const easePremium = "cubic-bezier(0.23, 1, 0.32, 1)"; 
             
-            // Lógica del Panel Principal
             const mainTrigger = document.getElementById('resources-trigger');
             const mainContent = document.getElementById('resources-content');
             const mainChevron = document.getElementById('resources-chevron');
@@ -840,7 +868,6 @@
                 });
             }
 
-            // Lógica de Sub-paneles
             const subAccordions = document.querySelectorAll('.sub-accordion');
             subAccordions.forEach(acc => {
                 const trigger = acc.querySelector('.sub-trigger');
