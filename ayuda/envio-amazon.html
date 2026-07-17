@@ -282,13 +282,13 @@
                                 <div class="flex items-start gap-4">
                                     <span class="mt-0.5 flex-shrink-0 text-fall-rust font-bold font-retro text-xs md:text-sm bg-fall-rust/10 border border-fall-rust/20 px-2.5 py-1 rounded-lg">1.1</span>
                                     <p class="font-body text-base md:text-lg text-fall-coffee/80 leading-relaxed">
-                                        Armar los Bundles de 3 botellas con papel termoencogible y pegarle las etiquetas.
+                                        Armar los Bundles de 3 botellas con papel termoencogible.
                                     </p>
                                 </div>
                                 <div class="flex items-start gap-4">
                                     <span class="mt-0.5 flex-shrink-0 text-fall-rust font-bold font-retro text-xs md:text-sm bg-fall-rust/10 border border-fall-rust/20 px-2.5 py-1 rounded-lg">1.2</span>
                                     <p class="font-body text-base md:text-lg text-fall-coffee/80 leading-relaxed">
-                                        Acomodarlos en cajas llevando un registro detallado.
+                                        Pegar a cada Bundles las 2 etiquetas que necesita en el área plana más grande que tenga.
                                     </p>
                                 </div>
                             </div>
@@ -302,13 +302,19 @@
                         </div>
                         
                         <div class="bg-white/70 backdrop-blur-xl border border-white rounded-[2rem] p-6 md:p-8 shadow-[0_15px_35px_rgba(62,39,35,0.03)] transition-all duration-500 group-hover:shadow-[0_25px_50px_rgba(62,39,35,0.06)] group-hover:-translate-y-1">
-                            <h4 class="font-retro text-2xl md:text-3xl font-bold text-fall-coffee mb-6 tracking-tight">Generar el envío</h4>
+                            <h4 class="font-retro text-2xl md:text-3xl font-bold text-fall-coffee mb-6 tracking-tight">Empaquetado</h4>
                             
                             <div class="flex flex-col gap-5">
                                 <div class="flex items-start gap-4">
                                     <span class="mt-0.5 flex-shrink-0 text-fall-mustard font-bold font-retro text-xs md:text-sm bg-fall-mustard/10 border border-fall-mustard/20 px-2.5 py-1 rounded-lg">2.1</span>
                                     <p class="font-body text-base md:text-lg text-fall-coffee/80 leading-relaxed">
-                                        Me avisan cuántas cajas son en total y sus medidas/pesos exactos para que genere la orden de envío en la plataforma de Amazon.
+                                        Acomodar los Bundles en cajas llevando un registro del tamaño, peso y cantidad de cada caja.
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <span class="mt-0.5 flex-shrink-0 text-fall-mustard font-bold font-retro text-xs md:text-sm bg-fall-mustard/10 border border-fall-mustard/20 px-2.5 py-1 rounded-lg">2.2</span>
+                                    <p class="font-body text-base md:text-lg text-fall-coffee/80 leading-relaxed">
+                                        Me avisan la cantidad de cajas para que genere la orden de envío en la plataforma de Amazon.
                                     </p>
                                 </div>
                             </div>
@@ -556,66 +562,92 @@
 
         <div class="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-12 gap-12 lg:gap-16">
             
-            <!-- Sticky Card (Izquierda en Desktop, Arriba en Mobile) -->
+            <!-- Sticky Card (Aviso Importante) -> Izquierda en Desktop, Arriba en Mobile -->
             <div class="lg:col-span-5 order-1 lg:order-1 relative">
-                <div class="details-card-anim lg:sticky lg:top-32 bg-fall-coffee rounded-[2rem] p-8 md:p-10 shadow-[0_30px_60px_rgba(62,39,35,0.12)] border border-white/5">
-                    <h3 class="font-retro text-2xl md:text-3xl font-extrabold text-white mb-8 tracking-wide">Plataforma<br>Seller Central</h3>
-                    <div class="flex flex-col gap-6">
-                        <div class="pb-6 relative">
-                            <div class="absolute bottom-0 left-0 w-full h-[1px] bg-white/20 detail-line"></div>
-                            <span class="block font-body text-sm font-medium text-white/70 mb-1 detail-text tracking-wide uppercase">Workflow :</span>
-                            <span class="block font-body text-lg font-medium text-white detail-text">Send to Amazon (STA)</span>
+                <div class="details-card-anim lg:sticky lg:top-32 bg-fall-coffee rounded-[2rem] p-8 md:p-10 shadow-[0_30px_60px_rgba(62,39,35,0.12)] border border-white/5 relative overflow-hidden">
+                    
+                    <!-- Elemento Decorativo SVG -->
+                    <svg class="absolute -right-4 -top-4 w-32 h-32 text-white/5" fill="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+
+                    <h3 class="font-retro text-2xl md:text-3xl font-extrabold text-white mb-6 tracking-wide relative z-10">Un recordatorio<br>importante</h3>
+                    
+                    <p class="font-body text-base md:text-lg text-white/80 leading-relaxed relative z-10 mb-8">
+                        Conforme vayan acomodando los Bundles en las cajas, es <strong class="text-fall-mustard">VITAL</strong> llevar un registro exacto. Con esos datos se va a generar la orden oficial de envío a Amazon.
+                    </p>
+
+                    <div class="flex flex-col gap-4 relative z-10">
+                        <div class="bg-white/10 p-4 rounded-xl border border-white/5 flex items-start gap-3">
+                            <span class="text-fall-mustard mt-1"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg></span>
+                            <span class="font-body text-sm font-medium text-white/90">Cuántos Bundles y de qué sabores van en cada caja.</span>
                         </div>
-                        <div class="pb-6 relative">
-                            <div class="absolute bottom-0 left-0 w-full h-[1px] bg-white/20 detail-line"></div>
-                            <span class="block font-body text-sm font-medium text-white/70 mb-1 detail-text tracking-wide uppercase">Tipo Empaque :</span>
-                            <span class="block font-body text-lg font-medium text-white detail-text">Case Packed Products</span>
-                        </div>
-                        <div class="pb-6 relative">
-                            <div class="absolute bottom-0 left-0 w-full h-[1px] bg-white/20 detail-line"></div>
-                            <span class="block font-body text-sm font-medium text-white/70 mb-1 detail-text tracking-wide uppercase">Preparación :</span>
-                            <span class="block font-body text-lg font-medium text-white detail-text">Merchant Prep</span>
-                        </div>
-                        <div class="pt-2">
-                            <span class="block font-body text-sm font-medium text-white/70 mb-1 detail-text tracking-wide uppercase">Etiquetas Cajas :</span>
-                            <span class="block font-body text-xl font-medium text-white detail-text">Térmicas (4x6")</span>
+                        <div class="bg-white/10 p-4 rounded-xl border border-white/5 flex items-start gap-3">
+                            <span class="text-fall-mustard mt-1"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg></span>
+                            <span class="font-body text-sm font-medium text-white/90">El peso total y las medidas finales de la caja sellada.</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Text Content (Derecha) -->
+            <!-- Text Content (Las reglas de las cajas) -> Derecha en Desktop, Abajo en Mobile -->
             <div class="lg:col-span-7 order-2 lg:order-2 flex flex-col gap-10 lg:pl-4">
                 <div class="reveal-block">
-                    <h2 class="font-retro text-4xl md:text-5xl lg:text-6xl font-extrabold text-fall-coffee mb-4 tracking-tight leading-[1.05]">Orden de Envío</h2>
-                    <h3 class="font-body text-xl md:text-2xl font-medium text-fall-mustard mb-8">2.1 Declaración en Sistema</h3>
+                    <h2 class="font-retro text-4xl md:text-5xl lg:text-6xl font-extrabold text-fall-coffee mb-4 tracking-tight leading-[1.05]">Cajas Master</h2>
+                    <h3 class="font-body text-xl md:text-2xl font-medium text-fall-mustard mb-6">2.1 Especificaciones de empaque</h3>
                     <p class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed mb-10">
-                        Una vez armados los Bundles, el siguiente paso crítico es la creación digital del envío dentro de <span class="font-bold text-fall-mustard">Amazon Seller Central</span>.
+                        Una vez que los Bundles ya están sellados y etiquetados, se pueden enviar en cualquier caja siempre que sea de cartón liso. Sin embargo, para que las bodegas de Amazon las acepten, hay <strong class="text-fall-coffee">4 reglas inquebrantables</strong>:
                     </p>
                     
-                    <ul class="flex flex-col gap-10">
-                        <li class="group flex items-start gap-5 transition-all duration-300">
-                            <span class="mt-1.5 text-fall-mustard flex-shrink-0 bg-fall-mustard/10 p-2 rounded-full"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg></span>
-                            <span class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed">
-                                <strong class="text-fall-coffee font-semibold block mb-1">Declaración de SKUs:</strong> 
-                                Seleccionar los SKUs específicos a enviar y confirmar el origen del embarque.
-                            </span>
-                        </li>
+                    <ul class="flex flex-col gap-10 mb-12">
+                        <!-- Regla 1 -->
                         <li class="group flex items-start gap-5 transition-all duration-300">
                             <span class="mt-1.5 text-fall-mustard flex-shrink-0 bg-fall-mustard/10 p-2 rounded-full"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg></span>
                             <span class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed">
-                                <strong class="text-fall-coffee font-semibold block mb-1">Medidas de Cajas Master:</strong> 
-                                Proveer las dimensiones exactas (Largo x Ancho x Alto) y el peso en Libras de cada caja máster.
+                                <strong class="text-fall-coffee font-semibold block mb-1">Cero códigos ajenos:</strong> 
+                                Las cajas no deben de tener ningún logotipo ni código de barras ajeno. En caso de que los tengan, se deben tapar por completo con plumón permanente grueso o con etiquetas en blanco.
                             </span>
                         </li>
+
+                        <!-- Regla 2 -->
                         <li class="group flex items-start gap-5 transition-all duration-300">
-                            <span class="mt-1.5 text-fall-mustard flex-shrink-0 bg-fall-mustard/10 p-2 rounded-full"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg></span>
+                            <span class="mt-1.5 text-fall-mustard flex-shrink-0 bg-fall-mustard/10 p-2 rounded-full"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg></span>
                             <span class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed">
-                                <strong class="text-fall-coffee font-semibold block mb-1">Confirmar Carrier:</strong> 
-                                Imprimir las etiquetas de envío generadas por el sistema (Térmicas 4x6).
+                                <strong class="text-fall-coffee font-semibold block mb-1">Medidas Máximas:</strong> 
+                                Ningún lado de la caja (largo, ancho o alto) debe medir más de <strong class="text-fall-coffee">25 pulgadas (63.5 cm)</strong>.
+                            </span>
+                        </li>
+
+                        <!-- Regla 3 -->
+                        <li class="group flex items-start gap-5 transition-all duration-300">
+                            <span class="mt-1.5 text-fall-mustard flex-shrink-0 bg-fall-mustard/10 p-2 rounded-full"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg></span>
+                            <span class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed">
+                                <strong class="text-fall-coffee font-semibold block mb-1">Límite de Peso (50 Lbs):</strong> 
+                                Ninguna caja debe pesar más de <strong class="text-fall-coffee">22.6 kg (50 libras)</strong>. Esto equivale a un máximo de 20 bundles grandes (de 360 gr) o 46 bundles chicos (de 155 gr) por caja.
+                            </span>
+                        </li>
+
+                        <!-- Regla 4 -->
+                        <li class="group flex items-start gap-5 transition-all duration-300">
+                            <span class="mt-1.5 text-fall-mustard flex-shrink-0 bg-fall-mustard/10 p-2 rounded-full"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg></span>
+                            <span class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed">
+                                <strong class="text-fall-coffee font-semibold block mb-1">Sellado en forma de "H":</strong> 
+                                La caja se debe cerrar usando cinta de embalaje normal (mínimo de 2 pulgadas de ancho). Hay que poner cinta en la línea central de apertura y también en los 4 bordes laterales, formando una "H" tanto arriba como abajo.
                             </span>
                         </li>
                     </ul>
+
+                    <!-- Call to Action Final -->
+                    <div class="bg-white/60 backdrop-blur-md border border-white shadow-[0_10px_30px_rgba(62,39,35,0.03)] rounded-[1.5rem] p-6 md:p-8">
+                        <div class="flex flex-col gap-4">
+                            <p class="font-body text-lg text-fall-coffee/80 leading-relaxed">
+                                Una vez selladas las cajas, mándame la lista completa con tamaño, peso y productos de cada una para que yo pueda emitir las etiquetas de envío.
+                            </p>
+                            <a href="https://wa.me/5219818296400" target="_blank" class="inline-flex items-center gap-3 bg-fall-coffee hover:bg-fall-mustard text-white px-6 py-3.5 rounded-xl font-body font-medium text-[15px] transition-colors w-fit group">
+                                Enviar reporte por WhatsApp
+                                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -624,10 +656,15 @@
 
 
 
+
+
+
+
+
     
 
-    <!-- ==========================================
-         PASO 3: ZIG-ZAG (TARJETA A LA DERECHA)
+  <!-- ==========================================
+         PASO 3: DESPACHO Y LOGÍSTICA
     =========================================== -->
     <section id="paso-3" class="relative w-full py-20 md:py-32 px-4 sm:px-6 md:px-8 border-t border-fall-coffee/10">
         
@@ -637,29 +674,53 @@
 
         <div class="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-12 gap-12 lg:gap-16">
             
-            <!-- Text Content (Izquierda) -->
-            <div class="lg:col-span-7 order-1 lg:order-1 flex flex-col gap-10 lg:pr-4">
+            <!-- [TEXTO PRINCIPAL] -> Arriba en Mobile, Izquierda en Desktop -->
+            <div class="lg:col-span-7 order-1 lg:order-1 flex flex-col gap-8 lg:pr-4">
+                
                 <div class="reveal-block">
-                    <h2 class="font-retro text-4xl md:text-5xl lg:text-6xl font-extrabold text-fall-coffee mb-4 tracking-tight leading-[1.05]">Envío al Almacén</h2>
-                    <h3 class="font-body text-xl md:text-2xl font-medium text-fall-olive mb-8">3.1 Despacho Físico</h3>
-                    <p class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed mb-10">
+                    <h2 class="font-retro text-4xl md:text-5xl lg:text-6xl font-extrabold text-fall-coffee mb-6 tracking-tight leading-[1.05]">Envío al Almacén</h2>
+                    <p class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed mb-4">
                         La fase final requiere que la entrega fluya sin problemas. Una caja rechazada representa merma operativa y costos adicionales.
                     </p>
-                    
-                    <ul class="flex flex-col gap-10">
-                        <li class="group flex items-start gap-5 transition-all duration-300">
-                            <span class="mt-1.5 text-fall-olive flex-shrink-0 bg-fall-olive/10 p-2 rounded-full"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg></span>
-                            <span class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed">
-                                <strong class="text-fall-coffee font-semibold block mb-1">Límites estrictos de caja:</strong> 
-                                Ninguna caja estándar debe superar las 50 libras o las 25 pulgadas por lado. En caso de superarlo, Amazon puede rechazar la recepción.
-                            </span>
+                </div>
+
+                <!-- 3.1 Etiquetado -->
+                <div class="reveal-block bg-white/40 backdrop-blur-md border border-white/60 rounded-[2rem] p-6 md:p-8 shadow-sm hover:shadow-md transition-all duration-500">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="font-retro font-bold text-sm md:text-base bg-fall-olive/10 text-fall-olive border border-fall-olive/20 px-3 py-1 rounded-lg">3.1</span>
+                        <h3 class="font-body text-2xl md:text-3xl font-bold text-fall-coffee tracking-tight">Etiquetado de las cajas</h3>
+                    </div>
+                    <p class="font-body text-base md:text-lg text-fall-coffee/75 leading-relaxed">
+                        Una vez que la orden está generada, les responderé al mensaje con las etiquetas. Solo necesito que se <strong class="text-fall-coffee">impriman y peguen en uno de los costados de las cajas</strong>.
+                    </p>
+                </div>
+
+                <!-- 3.2 Recolección -->
+                <div class="reveal-block bg-white/40 backdrop-blur-md border border-white/60 rounded-[2rem] p-6 md:p-8 shadow-sm hover:shadow-md transition-all duration-500">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="font-retro font-bold text-sm md:text-base bg-fall-olive/10 text-fall-olive border border-fall-olive/20 px-3 py-1 rounded-lg">3.2</span>
+                        <h3 class="font-body text-2xl md:text-3xl font-bold text-fall-coffee tracking-tight">Recolección de las cajas</h3>
+                    </div>
+                    <p class="font-body text-base md:text-lg text-fall-coffee/75 leading-relaxed">
+                        Amazon utiliza un sistema de <strong class="text-fall-coffee">Partners</strong>. Una empresa de paquetería pasará a buscar las cajas a la dirección de FEVAMEX y ellos se encargan del resto.
+                    </p>
+                </div>
+
+                <!-- Separador visual para las Reglas de Cajas Master -->
+                <div class="reveal-block mt-4">
+                     <h4 class="font-retro text-xl md:text-2xl font-bold text-fall-coffee mb-6">Reglas para Cajas Master</h4>
+                     <ul class="flex flex-col gap-6">
+                        <li class="flex items-start gap-4">
+                            <span class="text-fall-olive mt-1"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg></span>
+                            <span class="font-body text-base text-fall-coffee/80 leading-relaxed">Las cajas no deben tener logotipos ni códigos ajenos. Si los tienen, tápalos con plumón o etiquetas blancas.</span>
                         </li>
-                        <li class="group flex items-start gap-5 transition-all duration-300">
-                            <span class="mt-1.5 text-fall-olive flex-shrink-0 bg-fall-olive/10 p-2 rounded-full"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg></span>
-                            <span class="font-body text-lg md:text-xl text-fall-coffee/80 leading-relaxed">
-                                <strong class="text-fall-coffee font-semibold block mb-1">Colocación de Etiquetas Térmicas:</strong> 
-                                Deben pegarse en un lugar liso, preferentemente en el costado, cuidando que la cinta adhesiva nunca cruce por encima del código de barras.
-                            </span>
+                        <li class="flex items-start gap-4">
+                            <span class="text-fall-olive mt-1"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg></span>
+                            <span class="font-body text-base text-fall-coffee/80 leading-relaxed">Ningún lado debe medir más de <strong class="text-fall-coffee">25 pulgadas (63.5 cm)</strong>.</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-fall-olive mt-1"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span>
+                            <span class="font-body text-base text-fall-coffee/80 leading-relaxed">Ninguna caja debe pesar más de <strong class="text-fall-coffee">22.6 kg (50 libras)</strong>.</span>
                         </li>
                     </ul>
                 </div>
@@ -672,22 +733,17 @@
                     <div class="flex flex-col gap-6">
                         <div class="pb-6 relative">
                             <div class="absolute bottom-0 left-0 w-full h-[1px] bg-white/20 detail-line"></div>
-                            <span class="block font-body text-sm font-medium text-white/70 mb-1 detail-text tracking-wide uppercase">Límite Peso Caja :</span>
-                            <span class="block font-body text-xl font-medium text-white detail-text">Max 50 Lbs</span>
+                            <span class="block font-body text-sm font-medium text-white/70 mb-1 detail-text tracking-wide uppercase">Cinta de Embalaje :</span>
+                            <span class="block font-body text-lg font-medium text-white detail-text">Sellado en "H" (arriba y abajo)</span>
                         </div>
                         <div class="pb-6 relative">
                             <div class="absolute bottom-0 left-0 w-full h-[1px] bg-white/20 detail-line"></div>
-                            <span class="block font-body text-sm font-medium text-white/70 mb-1 detail-text tracking-wide uppercase">Límite Medidas :</span>
-                            <span class="block font-body text-lg font-medium text-white detail-text">Max 25" x lado</span>
-                        </div>
-                        <div class="pb-6 relative">
-                            <div class="absolute bottom-0 left-0 w-full h-[1px] bg-white/20 detail-line"></div>
-                            <span class="block font-body text-sm font-medium text-white/70 mb-1 detail-text tracking-wide uppercase">Lugar Etiqueta :</span>
-                            <span class="block font-body text-lg font-medium text-white detail-text leading-snug">Costado superior, sin cruzar cinta</span>
+                            <span class="block font-body text-sm font-medium text-white/70 mb-1 detail-text tracking-wide uppercase">Ancho mínimo :</span>
+                            <span class="block font-body text-xl font-medium text-white detail-text">2 Pulgadas</span>
                         </div>
                         <div class="pt-2">
-                            <span class="block font-body text-sm font-medium text-white/70 mb-1 detail-text tracking-wide uppercase">Palletización :</span>
-                            <span class="block font-body text-xl font-medium text-white detail-text">Estándar 40x48"</span>
+                            <span class="block font-body text-sm font-medium text-white/70 mb-1 detail-text tracking-wide uppercase">Estado del cartón :</span>
+                            <span class="block font-body text-lg font-medium text-white detail-text">Liso y resistente</span>
                         </div>
                     </div>
                 </div>
@@ -695,6 +751,13 @@
             
         </div>
     </section>
+
+
+
+
+
+
+    
 
     <!-- ==========================================
          FOOTER / SOPORTE
