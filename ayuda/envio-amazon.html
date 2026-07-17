@@ -427,6 +427,10 @@
                     </ul>
                 </div>
 
+
+
+
+
                 <!-- SUB-SECCIÓN 1.2: EL ETIQUETADO -->
                 <div class="reveal-block bg-white/40 backdrop-blur-md border border-white/60 rounded-[2rem] p-6 md:p-8 shadow-sm transition-all hover:shadow-md hover:bg-white/50 duration-500">
                     <div class="flex items-center gap-3 mb-6">
@@ -435,11 +439,37 @@
                     </div>
                     
                     <p class="font-body text-base md:text-lg text-fall-coffee/75 leading-relaxed mb-8">
-                       Para Amazon, juntar 3 productos hace que se considere un "producto nuevo" y, por lo tanto, requiere su propio <strong class="text-fall-coffee">código de barras</strong> además de una etiqueta de <strong class="text-fall-coffee">“Sold as a Set”</strong>:
+                       Para Amazon, juntar 3 productos hace que se considere un "producto nuevo" y, por lo tanto, requiere sus propias <strong class="text-fall-coffee">2 etiquetas:</strong>
                     </p>
 
+                    <ul class="flex flex-col gap-8">
+                        <!-- Etiqueta 1: Código de Barras -->
+                        <li class="group flex items-start gap-4 transition-all duration-300">
+                            <span class="mt-1 flex-shrink-0 bg-fall-olive/10 text-fall-olive p-2 rounded-full">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>
+                            </span>
+                            <span class="font-body text-lg text-fall-coffee/80 leading-relaxed">
+                                <strong class="text-fall-coffee font-semibold block mb-1">Código de barras FNSKU:</strong> 
+                                Es exactamente el que corresponde al tamaño y sabor (los encuentras en la sección de descargas). Se debe pegar siempre en la <strong class="text-fall-coffee">parte plana más grande</strong> que tenga el paquete.
+                            </span>
+                        </li>
+
+                        <!-- Etiqueta 2: Sold as a set (Destacada) -->
+                        <li class="group flex items-start gap-4 transition-all duration-300 bg-white/60 p-5 md:p-6 rounded-[1.5rem] border border-white shadow-sm mt-2">
+                            <span class="mt-1 flex-shrink-0 bg-fall-rust/10 text-fall-rust p-2 rounded-full">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                            </span>
+                            <span class="font-body text-lg text-fall-coffee/80 leading-relaxed">
+                                <strong class="text-fall-coffee font-semibold block mb-1">Etiqueta "Sold as a set":</strong> 
+                                Sirve para indicar que los productos no se venden por separado. Esta etiqueta puede ir pegada en <strong class="text-fall-coffee">cualquier lado del paquete, excepto abajo</strong>.
+                            </span>
+                        </li>
+                    </ul>
                 </div>
-            </div> <!-- ESTE DIV CERRADO ES EL QUE FALTABA -->
+
+
+
+                
 
             <!-- [2. TARJETAS DE DETALLES + RECURSOS] -> Abajo en Mobile, Derecha en Desktop -->
             <div class="lg:col-span-5 relative mt-4 lg:mt-0 order-2">
@@ -522,18 +552,30 @@
                                 </a>
                             </div>
 
+                           
                             <!-- 4. Nota de Rendimiento de Impresión (Premium Block) -->
                             <div class="pt-4">
-                                <div class="bg-white/10 rounded-xl p-4 border border-white/5 detail-text">
-                                    <span class="flex items-center gap-2 font-body text-xs font-bold text-fall-mustard mb-1 tracking-widest uppercase">
-                                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                                        Nota de impresión
-                                    </span>
-                                    <p class="font-body text-[15px] font-medium text-white/90 leading-snug">
-                                        Se imprimen en hoja de: <strong class="text-white">30-up labels</strong> de <strong class="text-white">1" x 2 5/8"</strong> en papel tamaño <strong class="text-white">US Letter</strong>.
-                                    </p>
+                                <div class="bg-white/10 rounded-xl p-4 md:p-5 border border-white/5 detail-text flex flex-col gap-4">
+                                    <div>
+                                        <span class="flex items-center gap-2 font-body text-xs font-bold text-fall-mustard mb-1.5 tracking-widest uppercase">
+                                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                            Nota de impresión
+                                        </span>
+                                        <p class="font-body text-[15px] font-medium text-white/90 leading-snug">
+                                            Se imprimen en hoja de: <strong class="text-white">30-up labels</strong> de <strong class="text-white">1" x 2 5/8"</strong> en papel tamaño <strong class="text-white">US Letter</strong>.
+                                        </p>
+                                    </div>
+                                    
+                                    <!-- Botón de Ejemplo (Referencia a Amazon) -->
+                                    <a href="https://www.amazon.com/Bostlabel-Return-Address-Labels-Stickers/dp/B0D4TPSSLN/ref=sr_1_4_sspa?crid=2QH2PVI9IGD79&dib=eyJ2IjoiMSJ9.xl2NatU4Gx-FSJL2N4oiqgjlKN2mF8xroDRgjcjSOvgOOrWqnHW0-KiZbpf39RIp6qZU6wkroAoA4xNvJw7DUvld7RduopQgHVxCUv1NSFsP5CZ5d18UDuEvsVCwLYGzTcKIAXj__SPVhK02Bk5Kg2q2R-7AQizBuYjbsZOitAjvLGpBHA7DimQu4xO_JQUk_LV7NDSee0DH1wtwKPM2l2la1gxYQMwUzMal2pB-FosUGwCLJoWnUVcM6zrCiiuCHr6flBNa-mv9aCIZZtPeSPoPUblGyywLz6h8I0b-uBE.0P1pVK7NdrqgFZBzzk-ZcrC6EzUFFNxb0Vob0PLLCC4&dib_tag=se&keywords=30-up%2Blabels%2Bde%2B1%22%2Bx%2B2%2B5%2F8%22&qid=1784329143&sprefix=30-up%2Blabels%2Bde%2B1%2Bx%2B2%2B5%2F8%2Caps%2C231&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" target="_blank" class="group flex items-center justify-between w-full sm:w-fit px-4 py-2.5 bg-black/20 hover:bg-black/40 border border-white/10 hover:border-white/25 rounded-lg transition-all duration-300 shadow-sm hover:shadow-md">
+                                        <span class="font-body text-sm font-medium text-white/80 group-hover:text-white transition-colors">Ver modelo de referencia</span>
+                                        <svg class="w-4 h-4 text-white/50 group-hover:text-white group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all duration-300 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                                    </a>
                                 </div>
                             </div>
+
+
+
                             
                         </div>
                     </div>
